@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartHome.Pages.LoginPage">
+
+
+  <RelativeLayout>
+    <Image Source="bg.png" Opacity="0.3" Aspect="AspectFill"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+    <StackLayout>
+      <StackLayout Orientation="Horizontal" Padding="50">
+        <Image Source="logo.png"></Image>
+      </StackLayout>
+      <Entry x:Name="account" Text="{Binding Account}" Placeholder="请输入您的账号" />
+      <Entry x:Name="pwd" Text="{Binding Pwd}" Placeholder="请输入您的密码" IsPassword="True" />
+      <Button Text="登陆" Clicked="Login">
+        <Button.Triggers>
+          <MultiTrigger TargetType="Button">
+            <MultiTrigger.Conditions>
+              <BindingCondition Binding="{Binding Source={x:Reference account},Path=Text.Length}" Value="0" />
+              <BindingCondition Binding="{Binding Source={x:Reference pwd},Path=Text.Length}" Value="0" />
+            </MultiTrigger.Conditions>
+            <Setter Property="IsEnabled" Value="False" />
+          </MultiTrigger>
+        </Button.Triggers>
+      </Button>
+      <StackLayout Orientation="Vertical"  VerticalOptions="StartAndExpand">
+        <Button Text="注册"></Button>
+        <Button Text="无声物联"></Button>
+      </StackLayout>
+    </StackLayout>
+  </RelativeLayout>
+
+
+</ContentPage>
