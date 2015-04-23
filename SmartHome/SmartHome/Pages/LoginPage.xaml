@@ -10,27 +10,27 @@
                   "{ConstraintExpression Type=RelativeToParent, Property=Width}"
                 RelativeLayout.HeightConstraint=
                   "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
-    <StackLayout>
-      <StackLayout Orientation="Horizontal" Padding="50">
+    <StackLayout Padding="10">
+      <StackLayout Orientation="Horizontal" Padding="100,50,100,50">
         <Image Source="logo.png"></Image>
       </StackLayout>
       <Entry x:Name="account" Text="{Binding Account}" Placeholder="请输入您的账号" />
-      <Entry x:Name="pwd" Text="{Binding Pwd}" Placeholder="请输入您的密码" IsPassword="True" />
+      <Entry x:Name="password" Text="{Binding Password}" Placeholder="请输入您的密码" IsPassword="True" />
       <Button Text="登陆" Clicked="Login">
         <Button.Triggers>
           <MultiTrigger TargetType="Button">
             <MultiTrigger.Conditions>
               <BindingCondition Binding="{Binding Source={x:Reference account},Path=Text.Length}" Value="0" />
-              <BindingCondition Binding="{Binding Source={x:Reference pwd},Path=Text.Length}" Value="0" />
+              <BindingCondition Binding="{Binding Source={x:Reference password},Path=Text.Length}" Value="0" />
             </MultiTrigger.Conditions>
             <Setter Property="IsEnabled" Value="False" />
           </MultiTrigger>
         </Button.Triggers>
       </Button>
-      <StackLayout Orientation="Vertical"  VerticalOptions="StartAndExpand">
-        <Button Text="注册"></Button>
-        <Button Text="无声物联"></Button>
-      </StackLayout>
+    </StackLayout>
+    <StackLayout VerticalOptions="End" Orientation="Horizontal" HorizontalOptions="Start">
+      <Button Text="注册" Clicked="Register"></Button>
+      <Button Text="无声物联"></Button>
     </StackLayout>
   </RelativeLayout>
 

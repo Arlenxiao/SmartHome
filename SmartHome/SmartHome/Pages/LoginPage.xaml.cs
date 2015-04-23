@@ -25,20 +25,12 @@ namespace SmartHome.Pages
 
         public async void Login(object sender, EventArgs e)
         {
-            this.NeedShowBusy = true;
-            //登录逻辑
-            var islogin = !NeedShowBusy;
-
-            this.NeedShowBusy = false;
-            if (islogin)
-            {
-                await this.DisplayAlert("警告", "认证失败,请确认您的账户和密码是否正确", "OK");
-            }
-            else
-            {
-                //await this.Navigation.PopModalAsync();
-            }
+            await this.DisplayAlert("警告", "账号:"+this.account.Text+" 密码"+this.password.Text, "OK");
         }
 
+        public async void Register(object sender, EventArgs e)
+        {
+            await this.Navigation.PushModalAsync(new RegisterPage());
+        }
     }
 }
