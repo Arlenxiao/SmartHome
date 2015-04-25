@@ -54,8 +54,8 @@
           </Button.Triggers>
         </Button>
       </StackLayout>
-      <Label Grid.Row="2"  Grid.Column="0" Text="注册" ></Label>
-      <Label Grid.Row="2"  Grid.Column="2" Text="无声物联" ></Label>
+      <Label x:Name="register" Grid.Row="2"  Grid.Column="0" Text="注册" ></Label>
+      <Label x:Name="wswl" Grid.Row="2"  Grid.Column="2" Text="无声物联" ></Label>
     </Grid>
   </RelativeLayout>
 

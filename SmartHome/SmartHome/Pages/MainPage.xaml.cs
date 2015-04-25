@@ -13,6 +13,12 @@ namespace SmartHome.Pages
         public MainPage()
         {
             InitializeComponent();
+            this.btnAdd.Clicked += (s, e) =>
+            {
+                Navigation.PushModalAsync(new LoginPage());
+            };
         }
+
+
     }
 }

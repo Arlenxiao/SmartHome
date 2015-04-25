@@ -23,6 +23,7 @@ namespace SmartHome.Pages
             InitializeComponent();
             //this.account.Style = BaseStyle.entryStyle;
             //this.password.Style = BaseStyle.entryStyle;
+            
         }
 
         public async void Login(object sender, EventArgs e)
