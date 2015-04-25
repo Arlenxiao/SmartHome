@@ -17,13 +17,33 @@ namespace SmartHome.Pages
 
         public bool NeedShowBusy { get; set; }
 
+        //private IPageManager PM { get; set; }
+
 
         public LoginPage()
         {
             InitializeComponent();
             //this.account.Style = BaseStyle.entryStyle;
             //this.password.Style = BaseStyle.entryStyle;
-            
+            InitEvent();
+        }
+
+        private void InitEvent()
+        {
+
+            var tgr_register = new TapGestureRecognizer();
+            tgr_register.Tapped += (s, e) =>
+            {
+                Navigation.PushModalAsync(new RegisterPage()); 
+            };
+            this.register.GestureRecognizers.Add(tgr_register);
+
+            var tgr_wswl = new TapGestureRecognizer();
+            tgr_wswl.Tapped += (s, e) =>
+            {
+                Device.OpenUri(new Uri("http://www.peacemoon.cn/"));
+            };
+            this.wswl.GestureRecognizers.Add(tgr_wswl);
         }
 
         public async void Login(object sender, EventArgs e)
@@ -33,7 +53,7 @@ namespace SmartHome.Pages
             var pwd = this.password.Text;
             if (user == "1" && pwd == "1")
             {
-                await this.Navigation.PushModalAsync(new MainPage());
+                await Navigation.PushModalAsync(new MainPage());
             }
             else
             {
@@ -41,9 +61,5 @@ namespace SmartHome.Pages
             }
         }
 
-        public async void Register(object sender, EventArgs e)
-        {
-            await this.Navigation.PushModalAsync(new RegisterPage());
-        }
     }
 }

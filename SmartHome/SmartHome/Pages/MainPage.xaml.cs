@@ -10,12 +10,14 @@ namespace SmartHome.Pages
 {
     public partial class MainPage : ContentPage
     {
+
         public MainPage()
         {
+
             InitializeComponent();
             this.btnAdd.Clicked += (s, e) =>
             {
-                Navigation.PushModalAsync(new LoginPage());
+               Navigation.PushModalAsync(new LoginPage());
             };
         }
 

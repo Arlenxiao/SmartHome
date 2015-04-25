@@ -31,6 +31,7 @@ namespace SmartHome
                     new Setter {Property = BackgroundColorProperty, Value = Color.Transparent},
                     new Setter {Property = HeightRequestProperty, Value = 80},
                     new Setter {Property = Entry.TextColorProperty, Value = Color.White},
+                   // new Setter {Property = Entry., Value = Color.White},
                 }
         };
 

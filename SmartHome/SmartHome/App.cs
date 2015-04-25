@@ -7,12 +7,12 @@ using Xamarin.Forms;
 
 namespace SmartHome
 {
-    public partial class App : Application
+    public partial class App : Application, IPageManager
     {
         public App()
         {
             // The root page of your application
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
@@ -41,5 +41,10 @@ namespace SmartHome
             }
         }
 
+
+        public void NavigationPage(Page page)
+        {
+            MainPage = page;
+        }
     }
 }

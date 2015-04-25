@@ -13,6 +13,7 @@
     </Style>
     <Style x:Key="EntryStyle" TargetType="Entry">
       <Setter Property="BackgroundColor" Value="Transparent"></Setter>
+      <Setter Property="HeightRequest" Value="80"></Setter>
     </Style>
     
   </ResourceDictionary>
@@ -31,6 +32,7 @@
       <Grid.RowDefinitions>
         <RowDefinition></RowDefinition>
         <RowDefinition Height="10*"></RowDefinition>
+        <RowDefinition  Height="2*"></RowDefinition>
         <RowDefinition  Height="1*"></RowDefinition>
       </Grid.RowDefinitions>
       <Grid.ColumnDefinitions>
@@ -38,7 +40,7 @@
         <ColumnDefinition  Width="3*"></ColumnDefinition>
         <ColumnDefinition  Width="1*"></ColumnDefinition>
       </Grid.ColumnDefinitions>
-      <StackLayout Grid.Row="1"  Grid.ColumnSpan="3">
+      <StackLayout Grid.Row="1"  Grid.ColumnSpan="3" Orientation="Vertical"  VerticalOptions="CenterAndExpand">
         <Image Source="logo.png"></Image>
         <Entry x:Name="account" Text="{Binding Account}" Placeholder="请输入您的账号" Style="{StaticResource EntryStyle}" />
         <Entry x:Name="password" Text="{Binding Password}" Placeholder="请输入您的密码" IsPassword="True" Style="{StaticResource EntryStyle}" />
@@ -54,8 +56,8 @@
           </Button.Triggers>
         </Button>
       </StackLayout>
-      <Label x:Name="register" Grid.Row="2"  Grid.Column="0" Text="注册" ></Label>
-      <Label x:Name="wswl" Grid.Row="2"  Grid.Column="2" Text="无声物联" ></Label>
+      <Label x:Name="register" Grid.Row="3"  Grid.Column="0" Text="注册" ></Label>
+      <Label x:Name="wswl" Grid.Row="3"  Grid.Column="2" Text="无声物联" ></Label>
     </Grid>
   </RelativeLayout>
 
