@@ -36,17 +36,30 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="IPageManager.cs" />
+    <Compile Include="Pages\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MessagePage.xaml.cs">
+      <DependentUpon>MessagePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MorePage.xaml.cs">
+      <DependentUpon>MorePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProductsListPage.xaml.cs">
+      <DependentUpon>ProductsListPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Style\BaseStyle.cs" />
+    <Compile Include="Variable\Common.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -79,6 +92,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\RegisterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\ProductsListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\MorePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\MessagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

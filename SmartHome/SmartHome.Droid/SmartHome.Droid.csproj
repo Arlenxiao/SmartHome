@@ -103,6 +103,11 @@
     <Content Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\drawable\logo.png" />
     <AndroidResource Include="Resources\drawable\bg.png" />
+    <AndroidResource Include="Resources\drawable\products.png" />
+    <AndroidResource Include="Resources\drawable\home.png" />
+    <AndroidResource Include="Resources\drawable\message.png" />
+    <AndroidResource Include="Resources\drawable\more.png" />
+    <AndroidResource Include="Resources\drawable\bg_grey.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SmartHome\SmartHome.csproj">

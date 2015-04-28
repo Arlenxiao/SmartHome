@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartHome.Pages.MessagePage">
+  <RelativeLayout>
+    <Image Source="bg.png" Opacity="0.3" Aspect="AspectFill"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+    <StackLayout>
+      <Grid  RowSpacing="10">
+        <Grid.RowDefinitions>
+          <RowDefinition></RowDefinition>
+          <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition></ColumnDefinition>
+          <ColumnDefinition Width="4*"></ColumnDefinition>
+          <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button  Grid.Row="0" Grid.ColumnSpan="3" BackgroundColor="#F3C458"  VerticalOptions="Fill" HorizontalOptions="Fill"  Text="添加正式账号" x:Name="btnAdd"></Button>
+        <Label Text="账号:" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0"></Label>
+        <Entry x:Name="txtSeachUid" Placeholder="查询的账号" Grid.Row="1" Grid.Column="1"></Entry>
+        <Button x:Name="btnSeach" Text="查询" Grid.Row="1" Grid.Column="2" BackgroundColor="#F3C458"></Button>
+      </Grid>
+      <Grid>
+        <!--行 -->
+        <Grid.RowDefinitions>
+          <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--列 -->
+        <Grid.ColumnDefinitions>
+          <!--用户名 -->
+          <ColumnDefinition Width="2*"></ColumnDefinition>
+          <!--数量 -->
+          <ColumnDefinition  Width="1*"></ColumnDefinition>
+          <!--在线 -->
+          <ColumnDefinition  Width="1*"></ColumnDefinition>
+          <!--天数 -->
+          <ColumnDefinition  Width="1*"></ColumnDefinition>
+          <!--操作 -->
+          <ColumnDefinition  Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0"   Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Text="用户名"></Label>
+        <Label Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Text="连接数"></Label>
+        <Label Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Text="在线"></Label>
+        <Label Grid.Row="0" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" Text="天数"></Label>
+        <Label  Grid.Row="0" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" Text="操作" ></Label>
+      </Grid>
+
+      <ListView  VerticalOptions="Fill" x:Name="lvUser">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <!--正式用户列表 -->
+              <Grid>
+                <!--行 -->
+                <Grid.RowDefinitions>
+                  <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <!--列 -->
+                <Grid.ColumnDefinitions>
+                  <!--用户名 -->
+                  <ColumnDefinition Width="2*"></ColumnDefinition>
+                  <!--数量 -->
+                  <ColumnDefinition  Width="1*"></ColumnDefinition>
+                  <!--在线 -->
+                  <ColumnDefinition  Width="1*"></ColumnDefinition>
+                  <!--天数 -->
+                  <ColumnDefinition  Width="1*"></ColumnDefinition>
+                  <!--操作 -->
+                  <ColumnDefinition  Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Text="{Binding UuserName}"></Label>
+                <Label Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Text="{Binding Line}"></Label>
+                <Label Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Text="{Binding OnLine}"></Label>
+                <Label Grid.Row="0" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" Text="{Binding Day}"></Label>
+                <Button Grid.Row="0" Grid.Column="4"   CommandParameter="{Binding UserId}"  Text="操作"></Button>
+              </Grid>
+            </ViewCell>
+
+
+          </DataTemplate>
+        </ListView.ItemTemplate>
+        <!--<ListView.Footer>
+          <Button Text="下一页" x:Name="btnNextPage"></Button>
+        </ListView.Footer>-->
+
+      </ListView>
+    </StackLayout>
+
+  </RelativeLayout>
+</ContentPage>

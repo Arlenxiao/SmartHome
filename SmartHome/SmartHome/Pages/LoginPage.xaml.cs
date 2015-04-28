@@ -23,8 +23,7 @@ namespace SmartHome.Pages
         public LoginPage()
         {
             InitializeComponent();
-            //this.account.Style = BaseStyle.entryStyle;
-            //this.password.Style = BaseStyle.entryStyle;
+            this.backgroundImage.Source = ImageSource.FromFile(Common.BackgroundImage);
             InitEvent();
         }
 
@@ -51,14 +50,14 @@ namespace SmartHome.Pages
 
             var user = this.account.Text;
             var pwd = this.password.Text;
-            if (user == "1" && pwd == "1")
-            {
+            //if (user == "1" && pwd == "1")
+            //{
                 await Navigation.PushModalAsync(new MainPage());
-            }
-            else
-            {
-                await this.DisplayAlert("警告", "账号:" + user + " 密码:" + pwd , "OK");
-            }
+            //}
+            //else
+            //{
+            //    await this.DisplayAlert("警告", "账号:" + user + " 密码:" + pwd , "OK");
+            //}
         }
 
     }

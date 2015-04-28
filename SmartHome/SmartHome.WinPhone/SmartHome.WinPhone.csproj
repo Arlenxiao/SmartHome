@@ -124,7 +124,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bg.png" />
+    <Content Include="bg_grey.png" />
+    <Content Include="home.png" />
     <Content Include="logo.png" />
+    <Content Include="message.png" />
+    <Content Include="more.png" />
+    <Content Include="products.png" />
     <Content Include="README_FIRST.txt" />
     <Content Include="SplashScreenImage.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
