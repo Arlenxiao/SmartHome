@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartHome.Pages.LoginPage">
+             x:Class="SmartHome.Pages.LoginPage" BackgroundImage="bg.png">
   <ContentPage.Resources>
     <ResourceDictionary>
       <Style x:Key="ButtonStyle" TargetType="Button">
@@ -18,48 +18,40 @@
 
     </ResourceDictionary>
   </ContentPage.Resources>
-
-  <RelativeLayout>
-    <Image  x:Name="backgroundImage"  Source="bg.png" Opacity="0.3" Aspect="AspectFill"
-                RelativeLayout.WidthConstraint=
+  <Grid  RelativeLayout.WidthConstraint=
                   "{ConstraintExpression Type=RelativeToParent, Property=Width}"
-                RelativeLayout.HeightConstraint=
-                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
-    <Grid  RelativeLayout.WidthConstraint=
-                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
-                RelativeLayout.HeightConstraint=
-                  "{ConstraintExpression Type=RelativeToParent, Property=Height}">
-      <Grid.RowDefinitions>
-        <RowDefinition></RowDefinition>
-        <RowDefinition Height="10*"></RowDefinition>
-        <RowDefinition  Height="2*"></RowDefinition>
-        <RowDefinition  Height="1*"></RowDefinition>
-      </Grid.RowDefinitions>
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition  Width="1*"></ColumnDefinition>
-        <ColumnDefinition  Width="3*"></ColumnDefinition>
-        <ColumnDefinition  Width="1*"></ColumnDefinition>
-      </Grid.ColumnDefinitions>
-      <StackLayout Grid.Row="1"  Grid.ColumnSpan="3" Orientation="Vertical"  VerticalOptions="CenterAndExpand">
-        <Image Source="logo.png"></Image>
-        <Entry x:Name="account" Text="{Binding Account}" Placeholder="请输入您的账号" Style="{StaticResource EntryStyle}" />
-        <Entry x:Name="password" Text="{Binding Password}" Placeholder="请输入您的密码" IsPassword="True" Style="{StaticResource EntryStyle}" />
-        <Button Text="登陆" Clicked="Login" Style="{StaticResource ButtonStyle}" >
-          <Button.Triggers>
-            <MultiTrigger TargetType="Button">
-              <MultiTrigger.Conditions>
-                <BindingCondition Binding="{Binding Source={x:Reference account},Path=Text.Length}" Value="0" />
-                <BindingCondition Binding="{Binding Source={x:Reference password},Path=Text.Length}" Value="0" />
-              </MultiTrigger.Conditions>
-              <Setter Property="IsEnabled" Value="False" />
-            </MultiTrigger>
-          </Button.Triggers>
-        </Button>
-      </StackLayout>
-      <Label x:Name="register" Grid.Row="3"  Grid.Column="0" Text="注册" ></Label>
-      <Label x:Name="wswl" Grid.Row="3"  Grid.Column="2" Text="无声物联" ></Label>
-    </Grid>
-  </RelativeLayout>
+              RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}" >
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition Height="10*"></RowDefinition>
+      <RowDefinition  Height="2*"></RowDefinition>
+      <RowDefinition  Height="1*"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition  Width="1*"></ColumnDefinition>
+      <ColumnDefinition  Width="3*"></ColumnDefinition>
+      <ColumnDefinition  Width="1*"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <StackLayout Grid.Row="1"  Grid.ColumnSpan="3" Orientation="Vertical"  VerticalOptions="CenterAndExpand">
+      <Image Source="logo.png"></Image>
+      <Entry x:Name="account" Text="{Binding Account}" Placeholder="请输入您的账号" Style="{StaticResource EntryStyle}" />
+      <Entry x:Name="password" Text="{Binding Password}" Placeholder="请输入您的密码" IsPassword="True" Style="{StaticResource EntryStyle}" />
+      <Button Text="登陆" Clicked="Login" Style="{StaticResource ButtonStyle}" >
+        <Button.Triggers>
+          <MultiTrigger TargetType="Button">
+            <MultiTrigger.Conditions>
+              <BindingCondition Binding="{Binding Source={x:Reference account},Path=Text.Length}" Value="0" />
+              <BindingCondition Binding="{Binding Source={x:Reference password},Path=Text.Length}" Value="0" />
+            </MultiTrigger.Conditions>
+            <Setter Property="IsEnabled" Value="False" />
+          </MultiTrigger>
+        </Button.Triggers>
+      </Button>
+    </StackLayout>
+    <Label x:Name="register" Grid.Row="3"  Grid.Column="0" Text="注册" ></Label>
+    <Label x:Name="wswl" Grid.Row="3"  Grid.Column="2" Text="无声物联" ></Label>
+  </Grid>
 
 
 

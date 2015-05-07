@@ -18,7 +18,7 @@ namespace SmartHome.Pages
         public RegisterPage()
         {
             InitializeComponent();
-            backgroundImage.Source = ImageSource.FromFile(Common.BackgroundImage);
+            //backgroundImage.Source = ImageSource.FromFile(Common.BackgroundImage);
 
             btn_register.Clicked += (s, e) =>
             {

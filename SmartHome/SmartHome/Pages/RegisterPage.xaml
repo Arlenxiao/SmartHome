@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartHome.Pages.RegisterPage">
+             x:Class="SmartHome.Pages.RegisterPage" BackgroundImage="bg.png">
   <ContentPage.Resources>
     <ResourceDictionary>
       <Style x:Key="ButtonStyle" TargetType="Button">
@@ -19,12 +19,6 @@
     </ResourceDictionary>
   </ContentPage.Resources>
 
-  <RelativeLayout>
-    <Image x:Name="backgroundImage" Source="bg.png" Opacity="0.3" Aspect="AspectFill"
-                RelativeLayout.WidthConstraint=
-                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
-                RelativeLayout.HeightConstraint=
-                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
 
     <Grid RelativeLayout.WidthConstraint=
                   "{ConstraintExpression Type=RelativeToParent, Property=Width}"
@@ -55,5 +49,4 @@
         <Button x:Name="btn_back" Text="返回"  Style="{StaticResource ButtonStyle}"></Button>
       </StackLayout>
     </Grid>
-  </RelativeLayout>
 </ContentPage>

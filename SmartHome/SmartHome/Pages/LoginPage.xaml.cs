@@ -23,7 +23,7 @@ namespace SmartHome.Pages
         public LoginPage()
         {
             InitializeComponent();
-            this.backgroundImage.Source = ImageSource.FromFile(Common.BackgroundImage);
+            //this.backgroundImage.Source = ImageSource.FromFile(Common.BackgroundImage);
             InitEvent();
         }
 

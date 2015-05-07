@@ -1,6 +1,212 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartHome.Pages.MorePage">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+             x:Class="SmartHome.Pages.MorePage" BackgroundImage="bg.png">
+  <ScrollView>
+    <StackLayout Orientation="Vertical">
+      <!--头部-->
+      <StackLayout>
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="1*"></ColumnDefinition>
+            <ColumnDefinition  Width="9*">></ColumnDefinition>
+            <ColumnDefinition  Width="2*">></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <Image  Grid.Column="0" Source="change.png"  Opacity="0.8" WidthRequest="40"></Image>
+          <StackLayout Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label  Text="无声物联会议室"></Label>
+          </StackLayout>
+          <RelativeLayout Grid.Column="2">
+            <Image Source="notification.png" Opacity="0.9" Aspect="AspectFill"  Rotation="0"/>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10,2,0,0" >
+              <Label Text="39" ></Label>
+            </StackLayout>
+          </RelativeLayout>
+        </Grid>
+        <Image Source="header_br.png" Opacity="0.3" Aspect="AspectFill"></Image>
+      </StackLayout>
+      <!--用户信息-->
+      <StackLayout>
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width ="2*"></ColumnDefinition>
+            <ColumnDefinition Width ="3*"></ColumnDefinition>
+            <ColumnDefinition Width ="1*"></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <RelativeLayout Grid.Row="0" Grid.RowSpan="2" Grid.Column="0">
+            <Image Source="user_bg.png" Opacity="0.9" Aspect="AspectFit"  Rotation="0"/>
+            <StackLayout HorizontalOptions="Center" >
+            </StackLayout>
+          </RelativeLayout>
+          <StackLayout Grid.Row="0"  Grid.Column="1"  Grid.ColumnSpan="2"  Orientation="Horizontal">
+            <Grid>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="3*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width ="1*"></ColumnDefinition>
+                <ColumnDefinition Width ="8*"></ColumnDefinition>
+                <ColumnDefinition Width ="1*"></ColumnDefinition>
+              </Grid.ColumnDefinitions>
+              <Image Grid.Row="1"  Grid.Column="0" Source="user_icon.png"  Opacity="0.5" WidthRequest="32"></Image>
+              <Label Grid.Row="1"  Grid.Column="1" Text="无声物联"></Label>
+              <Image Grid.Row="1"  Grid.Column="2" Source="setting.png"  Opacity="0.5" WidthRequest="32"></Image>
+            </Grid>
+          </StackLayout>
+          <StackLayout Grid.Row="1"  Grid.Column="1" Grid.ColumnSpan="2"   Orientation="Horizontal">
+            <Grid>
+              <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width ="1*"></ColumnDefinition>
+                <ColumnDefinition Width ="8*"></ColumnDefinition>
+              </Grid.ColumnDefinitions>
+              <Image Grid.Row="0"  Grid.Column="0" Source="warning.png" WidthRequest="16"  Opacity="0.5"></Image>
+              <Label Grid.Row="0"  Grid.Column="1" Text="卧室窗户报警!" TextColor="#E87D0A"></Label>
+
+            </Grid>
+          </StackLayout>
+        </Grid>
+      </StackLayout>
+      <!--常用统计-->
+      <StackLayout Orientation="Horizontal">
+        <StackLayout WidthRequest="140" HeightRequest="105">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                  <Image Source="online.png" Opacity="0.7" WidthRequest="32" />
+                  <Label Text="设备"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                  <Label Text="26"></Label>
+                  <Label Text="/"></Label>
+                  <Label Text="999"></Label>
+                </StackLayout>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <StackLayout WidthRequest="140" HeightRequest="105">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                  <Image Source="user_icon.png" Opacity="0.7" WidthRequest="32" />
+                  <Label Text="用户"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                  <Label Text="3"></Label>
+                  <Label Text="/"></Label>
+                  <Label Text="99"></Label>
+                </StackLayout>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+      </StackLayout>
+      <Label Text="常用设备"></Label>
+      <!--常用设备 1-->
+      <StackLayout  Orientation="Horizontal">
+        <!--网关-->
+        <StackLayout WidthRequest="140" HeightRequest="105">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="网关"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--触摸开关-->
+        <StackLayout WidthRequest="140" HeightRequest="105">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="触摸开关"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--门窗磁-->
+        <StackLayout WidthRequest="140" HeightRequest="105">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="门窗磁"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+      </StackLayout>
+      <!--常用设备 2-->
+      <StackLayout  Orientation="Horizontal">
+        <!--红外感应器-->
+        <StackLayout WidthRequest="140" HeightRequest="105">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="红外感应器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--调色控制器-->
+        <StackLayout WidthRequest="140" HeightRequest="105">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="调色控制器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--智能继电器-->
+        <StackLayout WidthRequest="140" HeightRequest="105">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="智能继电器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+      </StackLayout>
+      <!---->
+    </StackLayout>
+  </ScrollView>
 </ContentPage>
