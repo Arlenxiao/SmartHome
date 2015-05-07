@@ -108,6 +108,16 @@
     <AndroidResource Include="Resources\drawable\message.png" />
     <AndroidResource Include="Resources\drawable\more.png" />
     <AndroidResource Include="Resources\drawable\bg_grey.png" />
+    <AndroidResource Include="Resources\drawable\user_bg.png" />
+    <AndroidResource Include="Resources\drawable\user_icon.png" />
+    <AndroidResource Include="Resources\drawable\setting.png" />
+    <AndroidResource Include="Resources\drawable\warning.png" />
+    <AndroidResource Include="Resources\drawable\sbg.png" />
+    <AndroidResource Include="Resources\drawable\header_br.png" />
+    <AndroidResource Include="Resources\drawable\notification.png" />
+    <AndroidResource Include="Resources\drawable\change.png" />
+    <AndroidResource Include="Resources\drawable\online.png" />
+    <AndroidResource Include="Resources\drawable\glasses.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SmartHome\SmartHome.csproj">

@@ -13,6 +13,7 @@ namespace SmartHome.Pages
         public HomePage()
         {
             InitializeComponent();
+            backgroundImage.Source = ImageSource.FromFile(Common.BackgroundImage);
         }
     }
 }

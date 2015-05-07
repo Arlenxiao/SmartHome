@@ -125,12 +125,19 @@
   <ItemGroup>
     <Content Include="bg.png" />
     <Content Include="bg_grey.png" />
+    <Content Include="change.png" />
+    <Content Include="glasses.png" />
+    <Content Include="header_br.png" />
     <Content Include="home.png" />
     <Content Include="logo.png" />
     <Content Include="message.png" />
     <Content Include="more.png" />
+    <Content Include="notification.png" />
+    <Content Include="online.png" />
     <Content Include="products.png" />
     <Content Include="README_FIRST.txt" />
+    <Content Include="sbg.png" />
+    <Content Include="setting.png" />
     <Content Include="SplashScreenImage.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -158,6 +165,9 @@
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <Content Include="user_bg.png" />
+    <Content Include="user_icon.png" />
+    <Content Include="warning.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">

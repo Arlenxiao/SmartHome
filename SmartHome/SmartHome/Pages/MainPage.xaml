@@ -7,4 +7,5 @@
       <ContentPage Title="{Binding Title}" Icon="{Binding Icon}" Content="{Binding Content}"></ContentPage>
     </DataTemplate>
   </TabbedPage.ItemTemplate>-->
-</TabbedPage>
+  
+  </TabbedPage>
