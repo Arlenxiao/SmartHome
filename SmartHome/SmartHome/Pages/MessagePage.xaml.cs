@@ -14,5 +14,6 @@ namespace SmartHome.Pages
         {
             InitializeComponent();
         }
+
     }
 }

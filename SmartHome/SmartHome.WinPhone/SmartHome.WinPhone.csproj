@@ -19,7 +19,7 @@
     </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>PhoneApp1_$(Configuration)_$(Platform).xap</XapFilename>
+    <XapFilename>wswl.xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <SilverlightAppEntry>SmartHome.WinPhone.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
@@ -126,16 +126,24 @@
     <Content Include="bg.png" />
     <Content Include="bg_grey.png" />
     <Content Include="change.png" />
+    <Content Include="find.png" />
     <Content Include="glasses.png" />
     <Content Include="header_br.png" />
     <Content Include="home.png" />
     <Content Include="logo.png" />
     <Content Include="message.png" />
     <Content Include="more.png" />
+    <Content Include="more_desk.png" />
+    <Content Include="more_home.png" />
+    <Content Include="more_icon.png" />
+    <Content Include="more_info.png" />
+    <Content Include="more_like.png" />
+    <Content Include="more_setting.png" />
     <Content Include="notification.png" />
     <Content Include="online.png" />
     <Content Include="products.png" />
     <Content Include="README_FIRST.txt" />
+    <Content Include="rectangle.png" />
     <Content Include="sbg.png" />
     <Content Include="setting.png" />
     <Content Include="SplashScreenImage.jpg">
@@ -165,6 +173,7 @@
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <Content Include="un_sbg.png" />
     <Content Include="user_bg.png" />
     <Content Include="user_icon.png" />
     <Content Include="warning.png" />

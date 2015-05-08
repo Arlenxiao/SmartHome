@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomTabRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +119,15 @@
     <AndroidResource Include="Resources\drawable\change.png" />
     <AndroidResource Include="Resources\drawable\online.png" />
     <AndroidResource Include="Resources\drawable\glasses.png" />
+    <AndroidResource Include="Resources\drawable\rectangle.png" />
+    <AndroidResource Include="Resources\drawable\more_icon.png" />
+    <AndroidResource Include="Resources\drawable\more_info.png" />
+    <AndroidResource Include="Resources\drawable\more_like.png" />
+    <AndroidResource Include="Resources\drawable\more_setting.png" />
+    <AndroidResource Include="Resources\drawable\more_desk.png" />
+    <AndroidResource Include="Resources\drawable\more_home.png" />
+    <AndroidResource Include="Resources\drawable\un_sbg.png" />
+    <AndroidResource Include="Resources\drawable\find.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SmartHome\SmartHome.csproj">

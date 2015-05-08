@@ -17,9 +17,6 @@ namespace SmartHome.Pages
 
         public bool NeedShowBusy { get; set; }
 
-        //private IPageManager PM { get; set; }
-
-
         public LoginPage()
         {
             InitializeComponent();
@@ -52,7 +49,7 @@ namespace SmartHome.Pages
             var pwd = this.password.Text;
             //if (user == "1" && pwd == "1")
             //{
-                await Navigation.PushModalAsync(new MainPage());
+            await Navigation.PushModalAsync(new MainPage());
             //}
             //else
             //{

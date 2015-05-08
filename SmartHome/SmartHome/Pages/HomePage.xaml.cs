@@ -66,6 +66,29 @@ namespace SmartHome.Pages
             };
             CU_K0221.GestureRecognizers.Add(tgr_K0221);
 
+            //菜单设置
+            var tgr_setting1 = new TapGestureRecognizer();
+            tgr_setting1.Tapped += (s, e) =>
+            {
+                NavigationTab(TabMenus.TabMore);
+            };
+            menu_setting.GestureRecognizers.Add(tgr_setting1);
+
+            //报警设置
+            var tgr_message = new TapGestureRecognizer();
+            tgr_message.Tapped += async (s, e) =>
+            {
+                NavigationTab(TabMenus.TabMesssage);
+            };
+            menu_message.GestureRecognizers.Add(tgr_message);
+            message_info.GestureRecognizers.Add(tgr_message);
+
+        }
+
+        private void NavigationTab(WswlMenu menu)
+        {
+            var tp = this.Parent as MainPage;
+            if (tp != null) tp.NavigationCurrentPage(menu);
         }
     }
 }

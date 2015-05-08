@@ -6,26 +6,23 @@
   <ScrollView>
     <StackLayout Orientation="Vertical">
       <!--头部-->
-      <StackLayout>
-        <Grid>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition  Width="1*"></ColumnDefinition>
-            <ColumnDefinition  Width="9*">></ColumnDefinition>
-            <ColumnDefinition  Width="2*">></ColumnDefinition>
-          </Grid.ColumnDefinitions>
-          <Image  Grid.Column="0" Source="change.png"  Opacity="0.8" WidthRequest="40"></Image>
-          <StackLayout Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center">
-            <Label  Text="无声物联会议室"></Label>
-          </StackLayout>
-          <RelativeLayout Grid.Column="2">
-            <Image Source="notification.png" Opacity="0.9" Aspect="AspectFill"  Rotation="0"/>
-            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="10,2,0,0" >
-              <Label Text="39" ></Label>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+          <Image Source="change.png"  Opacity="0.8" WidthRequest="48"></Image>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand">
+          <Label  Text="无声物联会议室"></Label>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" x:Name="menu_message">
+          <RelativeLayout>
+            <Image Source="notification.png" Opacity="0.9" Aspect="AspectFit" WidthRequest="48"/>
+            <StackLayout Padding="8,2,0,0">
+              <Label Text="39"></Label>
             </StackLayout>
           </RelativeLayout>
-        </Grid>
-        <Image Source="header_br.png" Opacity="0.3" Aspect="AspectFill"></Image>
+        </StackLayout> 
       </StackLayout>
+      <Image Source="header_br.png" Opacity="0.3" Aspect="AspectFill"></Image>
       <!--用户信息-->
       <StackLayout>
         <Grid>
@@ -57,23 +54,12 @@
               </Grid.ColumnDefinitions>
               <Image Grid.Row="1"  Grid.Column="0" Source="user_icon.png"  Opacity="0.5" WidthRequest="32"></Image>
               <Label Grid.Row="1"  Grid.Column="1" Text="无声物联"></Label>
-              <Image Grid.Row="1"  Grid.Column="2" Source="setting.png"  Opacity="0.5" WidthRequest="32"></Image>
+              <Image Grid.Row="1"  Grid.Column="2" Source="setting.png"  Opacity="0.5" WidthRequest="32" x:Name="menu_setting"></Image>
             </Grid>
           </StackLayout>
-          <StackLayout Grid.Row="1"  Grid.Column="1" Grid.ColumnSpan="2"   Orientation="Horizontal">
-            <Grid>
-              <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-              </Grid.RowDefinitions>
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width ="1*"></ColumnDefinition>
-                <ColumnDefinition Width ="8*"></ColumnDefinition>
-              </Grid.ColumnDefinitions>
-              <Image Grid.Row="0"  Grid.Column="0" Source="warning.png" WidthRequest="16"  Opacity="0.5"></Image>
-              <Label Grid.Row="0"  Grid.Column="1" Text="卧室窗户报警!" TextColor="#E87D0A"></Label>
-
-            </Grid>
+          <StackLayout Grid.Row="1"  Grid.Column="1" Grid.ColumnSpan="2"   Orientation="Horizontal" x:Name="message_info" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" >
+              <Image Source="warning.png" WidthRequest="16"  Opacity="0.5"></Image>
+              <Label Text="卧室窗户报警!" TextColor="#E87D0A"></Label>
           </StackLayout>
         </Grid>
       </StackLayout>
@@ -81,7 +67,7 @@
       <StackLayout Orientation="Horizontal">
         <StackLayout WidthRequest="140" HeightRequest="105">
           <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
             <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
               <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
@@ -99,7 +85,7 @@
         </StackLayout>
         <StackLayout WidthRequest="140" HeightRequest="105">
           <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
             <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
               <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
@@ -122,7 +108,7 @@
         <!--网关-->
         <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_W0103">
           <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
             <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
               <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout HorizontalOptions="CenterAndExpand">
@@ -136,7 +122,7 @@
         <!--触摸开关-->
         <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K0203">
           <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
             <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
               <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout HorizontalOptions="CenterAndExpand">
@@ -150,7 +136,7 @@
         <!--门窗磁-->
         <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A0501">
           <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
             <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
               <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout HorizontalOptions="CenterAndExpand">
@@ -167,7 +153,7 @@
         <!--红外感应器-->
         <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A0541">
           <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
             <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
               <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout HorizontalOptions="CenterAndExpand">
@@ -181,7 +167,7 @@
         <!--调色控制器-->
         <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_C0611">
           <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
             <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
               <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout HorizontalOptions="CenterAndExpand">
@@ -195,7 +181,7 @@
         <!--智能继电器-->
         <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K0221">
           <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.2"  Aspect="AspectFit"/>
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
             <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
               <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <StackLayout HorizontalOptions="CenterAndExpand">
@@ -210,5 +196,5 @@
       <!---->
     </StackLayout>
   </ScrollView>
-  
+
 </ContentPage>

@@ -2,10 +2,254 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartHome.Pages.ProductsListPage" BackgroundImage="bg.png">
-    <ScrollView x:Name="sv">
-      <StackLayout Orientation="Vertical">
-        <Label x:Name="lbl_info"></Label>
-        <Label x:Name="lbl_info_1"></Label>
+  <ScrollView x:Name="sv">
+    <StackLayout Orientation="Vertical">
+      <!--头部-->
+      <!--<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+          <Image Source="change.png"  Opacity="0.8" WidthRequest="48"></Image>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand">
+          <Label  Text="无声物联会议室"></Label>
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand">
+          <RelativeLayout>
+            <Image Source="notification.png" Opacity="0.9" Aspect="AspectFit" WidthRequest="48"/>
+            <StackLayout Padding="8,2,0,0">
+              <Label Text="39"></Label>
+            </StackLayout>
+
+          </RelativeLayout>
+        </StackLayout>
       </StackLayout>
-    </ScrollView>
+      <Image Source="header_br.png" Opacity="0.3" Aspect="AspectFill"></Image>-->
+      <Label Text="常用设备"></Label>
+      <!--设备列表 1-->
+      <StackLayout  Orientation="Horizontal">
+        <!--网关-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_W0103">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="网关"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--触摸开关-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K0203">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="触摸开关"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--门窗磁-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A0501">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="门窗磁"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+      </StackLayout>
+      <!--设备列表 2-->
+      <StackLayout  Orientation="Horizontal">
+        <!--红外感应器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A0541">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="红外感应器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--调色控制器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_C0611">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="调色控制器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--智能继电器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K0221">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="智能继电器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+      </StackLayout>
+      <!--设备列表 3-->
+      <StackLayout  Orientation="Horizontal">
+        <!--红外感应器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A05413">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="红外感应器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--调色控制器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_C06113">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="调色控制器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--智能继电器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K02213">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="智能继电器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+      </StackLayout>
+      <!--设备列表 4-->
+      <StackLayout  Orientation="Horizontal">
+        <!--红外感应器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A05412">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="红外感应器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--调色控制器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_C06112">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="调色控制器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--智能继电器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K02212">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="智能继电器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+      </StackLayout>
+      <!--设备列表 5-->
+      <StackLayout  Orientation="Horizontal">
+        <!--红外感应器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A05411">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="红外感应器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--调色控制器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_C06111">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="调色控制器"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--智能继电器-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K02211">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="find.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="发现设备"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+      </StackLayout>
+      <!---->
+    </StackLayout>
+  </ScrollView>
 </ContentPage>
