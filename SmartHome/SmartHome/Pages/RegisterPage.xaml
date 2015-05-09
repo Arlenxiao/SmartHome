@@ -6,20 +6,15 @@
     <ResourceDictionary>
       <Style x:Key="ButtonStyle" TargetType="Button">
         <Setter Property="BackgroundColor" Value="Transparent"></Setter>
-        <Setter Property="HeightRequest" Value="80"></Setter>
         <Setter Property="BorderWidth" Value="1"></Setter>
         <Setter Property="BorderColor" Value="White"></Setter>
         <Setter Property="TextColor" Value="White"></Setter>
       </Style>
       <Style x:Key="EntryStyle" TargetType="Entry">
         <Setter Property="BackgroundColor" Value="Transparent"></Setter>
-        <Setter Property="HeightRequest" Value="80"></Setter>
       </Style>
-
     </ResourceDictionary>
   </ContentPage.Resources>
-
-
     <Grid RelativeLayout.WidthConstraint=
                   "{ConstraintExpression Type=RelativeToParent, Property=Width}"
                   RelativeLayout.HeightConstraint=
@@ -38,9 +33,7 @@
       <StackLayout Grid.Row="1"  Grid.Column="1" Orientation="Vertical"  VerticalOptions="Center" HorizontalOptions="Center" Padding="10">
         <Label Text="注册账号" FontSize="36"></Label>
       </StackLayout>
-
       <StackLayout Grid.Row="2"  Grid.ColumnSpan="3" Orientation="Vertical"  VerticalOptions="CenterAndExpand" Padding="10">
-      
         <Entry x:Name="userName" Placeholder="用户名"  Style="{StaticResource EntryStyle}"></Entry>
         <Entry x:Name="password" Placeholder="密码" IsPassword="True"  Style="{StaticResource EntryStyle}"></Entry>
         <Entry x:Name="confirmPassword" Placeholder="确认密码" IsPassword="True"  Style="{StaticResource EntryStyle}"></Entry>
