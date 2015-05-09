@@ -13,7 +13,9 @@ namespace SmartHome.Pages
         public HomePage()
         {
             InitializeComponent();
+
             InitEvent();
+            LoadInfo();
         }
 
         private void InitEvent()
@@ -83,6 +85,27 @@ namespace SmartHome.Pages
             menu_message.GestureRecognizers.Add(tgr_message);
             message_info.GestureRecognizers.Add(tgr_message);
 
+
+            //菜单设置
+            var tgr_gateway = new TapGestureRecognizer();
+            tgr_gateway.Tapped += (s, e) =>
+            {
+                Navigation.PushModalAsync(new GatewayManagePage());
+            };
+            select_gateway.GestureRecognizers.Add(tgr_gateway);
+
+           
+
+        }
+
+        private void LoadInfo()
+        {
+            switch (Wswl.CurrentGateway)
+            {
+                case 1: this.gatewayName.Text = "无声物联办公室"; break;
+                case 2: this.gatewayName.Text = "Arlen家"; break;
+                default: this.gatewayName.Text = "你猜我是哪儿的网关"; break;
+            }
         }
 
         private void NavigationTab(WswlMenu menu)

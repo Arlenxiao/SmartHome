@@ -20,8 +20,8 @@ namespace SmartHome.Droid
         private Dictionary<Int32, Int32> icons = new Dictionary<Int32, Int32>();
         protected override void DispatchDraw(Android.Graphics.Canvas canvas)
         {
-            getIcons();
-            setIcons();
+            //getIcons();
+            //setIcons();
             base.DispatchDraw(canvas);
         }
         private void getIcons()

@@ -50,6 +50,17 @@
           </MultiTrigger>
         </Button.Triggers>
       </Button>
+      <Button Text="测试账号" Clicked="LoginTest" Style="{StaticResource ButtonStyle}" >
+        <Button.Triggers>
+          <MultiTrigger TargetType="Button">
+            <MultiTrigger.Conditions>
+              <BindingCondition Binding="{Binding Source={x:Reference account},Path=Text.Length}" Value="0" />
+              <BindingCondition Binding="{Binding Source={x:Reference password},Path=Text.Length}" Value="0" />
+            </MultiTrigger.Conditions>
+            <Setter Property="IsEnabled" Value="False" />
+          </MultiTrigger>
+        </Button.Triggers>
+      </Button>
     </StackLayout>
     <Label x:Name="register" Grid.Row="3"  Grid.Column="0" Text="注册" ></Label>
     <Label x:Name="wswl" Grid.Row="3"  Grid.Column="2" Text="无声物联" ></Label>

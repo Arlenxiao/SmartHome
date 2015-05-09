@@ -7,11 +7,11 @@
     <StackLayout Orientation="Vertical">
       <!--头部-->
       <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
-        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  x:Name="select_gateway">
           <Image Source="change.png"  Opacity="0.8" WidthRequest="48"></Image>
         </StackLayout>
         <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand">
-          <Label  Text="无声物联会议室"></Label>
+          <Label  Text="无声物联会议室" x:Name="gatewayName"></Label>
         </StackLayout>
         <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" x:Name="menu_message">
           <RelativeLayout>
@@ -53,7 +53,7 @@
                 <ColumnDefinition Width ="1*"></ColumnDefinition>
               </Grid.ColumnDefinitions>
               <Image Grid.Row="1"  Grid.Column="0" Source="user_icon.png"  Opacity="0.5" WidthRequest="32"></Image>
-              <Label Grid.Row="1"  Grid.Column="1" Text="无声物联"></Label>
+              <Label Grid.Row="1"  Grid.Column="1" Text="admin"></Label>
               <Image Grid.Row="1"  Grid.Column="2" Source="setting.png"  Opacity="0.5" WidthRequest="32" x:Name="menu_setting"></Image>
             </Grid>
           </StackLayout>

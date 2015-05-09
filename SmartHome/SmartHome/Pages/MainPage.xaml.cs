@@ -11,9 +11,10 @@ namespace SmartHome.Pages
     public partial class MainPage : TabbedPage
     {
 
+       
+
         public MainPage()
         {
-
             InitializeComponent();
             InitTabPages();
         }
@@ -44,7 +45,7 @@ namespace SmartHome.Pages
                 case 0: CurrentPage = _tabHome; break;
                 case 1: CurrentPage = _tabMessage; break;
                 case 2: CurrentPage = _tabProducts; break;
-                case 3: CurrentPage = _tabMessage; break;
+                case 3: CurrentPage = _tabMore; break;
                 default:
                     CurrentPage = _tabHome; break;
             }

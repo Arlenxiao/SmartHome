@@ -30,7 +30,7 @@ namespace SmartHome.Pages
             var tgr_register = new TapGestureRecognizer();
             tgr_register.Tapped += (s, e) =>
             {
-                Navigation.PushModalAsync(new RegisterPage()); 
+                Navigation.PushModalAsync(new RegisterPage());
             };
             this.register.GestureRecognizers.Add(tgr_register);
 
@@ -49,12 +49,27 @@ namespace SmartHome.Pages
             var pwd = this.password.Text;
             //if (user == "1" && pwd == "1")
             //{
-            await Navigation.PushModalAsync(new MainPage());
+
+            if (Wswl.CurrentGateway < 0)
+            {
+                await Navigation.PushModalAsync(new GatewayManagePage());
+            }
+            else
+            {
+                await Navigation.PushModalAsync(new MainPage());
+            }
             //}
             //else
             //{
             //    await this.DisplayAlert("警告", "账号:" + user + " 密码:" + pwd , "OK");
             //}
+        }
+
+        public async void LoginTest(object sender, EventArgs e)
+        {
+            Wswl.CurrentGateway = 1;
+            await Navigation.PushModalAsync(new MainPage());
+
         }
 
     }

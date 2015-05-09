@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartHome.Pages.GatewayManagePage" BackgroundImage="bg.png">
+  <ScrollView>
+    <StackLayout Orientation="Vertical">
+      <Label Text="在线网关"></Label>
+      <!--网关列表 1-->
+      <StackLayout  Orientation="Horizontal">
+        <!--网关1-->
+        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="W0001">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="无声物联办公室" ></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+        <!--网关2-->
+        <StackLayout WidthRequest="140" HeightRequest="105"  x:Name="W0002">
+          <RelativeLayout HorizontalOptions="FillAndExpand">
+            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
+            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
+              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                </StackLayout>
+                <Label Text="Arlen家"></Label>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+        </StackLayout>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
