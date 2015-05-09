@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartHome.Pages.K0203Page" BackgroundImage="bg.png">
+  <ScrollView>
+    <StackLayout Orientation="Vertical">
+      <!---->
+      <Label Text="触摸开关"></Label>
+      <!--网关列表 1-->
+      <!--一路开关-->
+      <StackLayout HorizontalOptions="FillAndExpand">
+        <RelativeLayout HorizontalOptions="FillAndExpand">
+          <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
+          <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,10,0">
+              <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+                <Label Text="一路开关"></Label>
+              </StackLayout>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                <Image Source="more_icon.png" Opacity="0.7" WidthRequest="36" />
+              </StackLayout>
+            </StackLayout>
+          </StackLayout>
+        </RelativeLayout>
+      </StackLayout>
+      <!--二路开关-->
+      <StackLayout HorizontalOptions="FillAndExpand">
+        <RelativeLayout HorizontalOptions="FillAndExpand">
+          <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
+          <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,10,0">
+              <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+                <Label Text="二路开关"></Label>
+              </StackLayout>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                <Image Source="more_icon.png" Opacity="0.7" WidthRequest="36" />
+              </StackLayout>
+            </StackLayout>
+          </StackLayout>
+        </RelativeLayout>
+      </StackLayout>
+      <!---->
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

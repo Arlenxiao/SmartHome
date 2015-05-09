@@ -4,26 +4,7 @@
              x:Class="SmartHome.Pages.ProductsListPage" BackgroundImage="bg.png">
   <ScrollView x:Name="sv">
     <StackLayout Orientation="Vertical">
-      <!--头部-->
-      <!--<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
-        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-          <Image Source="change.png"  Opacity="0.8" WidthRequest="48"></Image>
-        </StackLayout>
-        <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand">
-          <Label  Text="无声物联会议室"></Label>
-        </StackLayout>
-        <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand">
-          <RelativeLayout>
-            <Image Source="notification.png" Opacity="0.9" Aspect="AspectFit" WidthRequest="48"/>
-            <StackLayout Padding="8,2,0,0">
-              <Label Text="39"></Label>
-            </StackLayout>
-
-          </RelativeLayout>
-        </StackLayout>
-      </StackLayout>
-      <Image Source="header_br.png" Opacity="0.3" Aspect="AspectFill"></Image>-->
-      <Label Text="常用设备"></Label>
+      <Label Text="设备列表"></Label>
       <!--设备列表 1-->
       <StackLayout  Orientation="Horizontal">
         <!--网关-->

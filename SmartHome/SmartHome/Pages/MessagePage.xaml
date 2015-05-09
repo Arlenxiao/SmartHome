@@ -5,7 +5,7 @@
   <ScrollView>
     <StackLayout Orientation="Vertical">
       <!--会议室触摸开关报警-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="info_0">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -23,7 +23,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--办公室触门窗磁报警-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="info_1">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -41,7 +41,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--总经理办公室门窗磁报警-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="info_2">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -59,7 +59,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--智能门锁新品推荐-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="info_3">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -78,7 +78,7 @@
       </StackLayout>
       <!---->
       <!--xxx产品报警-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="info_4">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -96,7 +96,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--xxx产品报警-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="info_5">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -114,7 +114,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--总经理办公室门窗磁报警-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="info_6">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -132,7 +132,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--xxx产品报警-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="info_7">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -150,7 +150,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--xxx产品报警-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="info_8">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -168,7 +168,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--总经理办公室门窗磁报警-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="info_9">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"

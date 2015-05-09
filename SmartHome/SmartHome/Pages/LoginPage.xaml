@@ -6,14 +6,12 @@
     <ResourceDictionary>
       <Style x:Key="ButtonStyle" TargetType="Button">
         <Setter Property="BackgroundColor" Value="Transparent"></Setter>
-        <Setter Property="HeightRequest" Value="80"></Setter>
         <Setter Property="BorderWidth" Value="1"></Setter>
         <Setter Property="BorderColor" Value="White"></Setter>
         <Setter Property="TextColor" Value="White"></Setter>
       </Style>
       <Style x:Key="EntryStyle" TargetType="Entry">
         <Setter Property="BackgroundColor" Value="Transparent"></Setter>
-        <Setter Property="HeightRequest" Value="80"></Setter>
       </Style>
 
     </ResourceDictionary>

@@ -4,27 +4,8 @@
              x:Class="SmartHome.Pages.MorePage" BackgroundImage="bg.png">
   <ScrollView>
     <StackLayout Orientation="Vertical">
-      <!--头部-->
-      <!--<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
-        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-          <Image Source="change.png"  Opacity="0.8" WidthRequest="48"></Image>
-        </StackLayout>
-        <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand">
-          <Label  Text="无声物联会议室"></Label>
-        </StackLayout>
-        <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand">
-          <RelativeLayout>
-            <Image Source="notification.png" Opacity="0.9" Aspect="AspectFit" WidthRequest="48"/>
-            <StackLayout Padding="8,2,0,0">
-              <Label Text="39"></Label>
-            </StackLayout>
-
-          </RelativeLayout>
-        </StackLayout>
-      </StackLayout>
-      <Image Source="header_br.png" Opacity="0.3" Aspect="AspectFill"></Image>-->
       <!--系统设置-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand" x:Name="setting_system">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand" 
@@ -42,7 +23,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--账号设置-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand"  x:Name="setting_account">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -60,7 +41,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--网关管理-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand"  x:Name="setting_gateway">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"
@@ -78,7 +59,7 @@
         </RelativeLayout>
       </StackLayout>
       <!--新品商城-->
-      <StackLayout HorizontalOptions="FillAndExpand">
+      <StackLayout HorizontalOptions="FillAndExpand"  x:Name="setting_shop">
         <RelativeLayout HorizontalOptions="FillAndExpand">
           <Image Source="rectangle.png" Opacity="0.9"  Aspect="AspectFill"/>
           <StackLayout Orientation="Horizontal"  HeightRequest="80"  VerticalOptions="CenterAndExpand"

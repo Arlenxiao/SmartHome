@@ -32,7 +32,7 @@ namespace SmartHome.Pages
             var tgr_K0203 = new TapGestureRecognizer();
             tgr_K0203.Tapped += (s, e) =>
             {
-                DisplayAlert("提示", "你选择了触摸开关", "OK");
+                Navigation.PushModalAsync(new K0203Page());
             };
             CU_K0203.GestureRecognizers.Add(tgr_K0203);
 
@@ -41,6 +41,7 @@ namespace SmartHome.Pages
             tgr_A0501.Tapped += (s, e) =>
             {
                 DisplayAlert("提示", "你选择了门窗磁", "OK");
+                
             };
             CU_A0501.GestureRecognizers.Add(tgr_A0501);
 

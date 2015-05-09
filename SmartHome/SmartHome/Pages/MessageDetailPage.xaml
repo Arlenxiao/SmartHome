@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartHome.Pages.MessageDetailPage" BackgroundImage="bg.png">
+  <ScrollView>
+    <StackLayout Orientation="Vertical">
+      <!---->
+      <Label Text="At runtime, each page and its controls are mapped to platform-specific native user interface elements; for example, a Xamarin.Forms Entry becomes a UITextView on iOS, an EditText on Android, and a TextBox on Windows."></Label>
+      
+      <!---->
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
