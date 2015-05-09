@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
+  <Languages xmlns="">
+    <Language code="zh-CN" />
+  </Languages>
   <App xmlns="" ProductID="{4655c828-c7ca-4e8b-80f4-670b94d7a9f3}" Title="无声物联" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="无声物联" Description="万家灯火.无声物联" Publisher="无声物联" PublisherID="{50648c14-3595-41d2-8e0b-6dff0d57af09}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
@@ -20,18 +23,13 @@
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
           <Title>无声物联</Title>
-          <BackContent>
-          </BackContent>
-          <BackBackgroundImageURI>
-          </BackBackgroundImageURI>
-          <BackTitle>
-          </BackTitle>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
           <LargeBackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileLarge.png</LargeBackgroundImageURI>
           <LargeBackContent />
-          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">
-          </LargeBackBackgroundImageURI>
-          <DeviceLockImageURI>
-          </DeviceLockImageURI>
+          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false"></LargeBackBackgroundImageURI>
+          <DeviceLockImageURI></DeviceLockImageURI>
           <HasLarge>True</HasLarge>
         </TemplateFlip>
       </PrimaryToken>

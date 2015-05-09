@@ -6,229 +6,280 @@
     <StackLayout Orientation="Vertical">
       <Label Text="设备列表"></Label>
       <!--设备列表 1-->
-      <StackLayout  Orientation="Horizontal">
-        <!--网关-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_W0103">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+      <StackLayout HorizontalOptions="FillAndExpand">
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <!--网关-->
+          <StackLayout Grid.Row="0" Grid.Column="0" x:Name="CU_W0103">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="sbg.png" Opacity="0.3"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="网关"></Label>
                 </StackLayout>
-                <Label Text="网关"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
-        <!--触摸开关-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K0203">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+            </RelativeLayout>
+          </StackLayout>
+          <!--触摸开关-->
+          <StackLayout Grid.Row="0" Grid.Column="1" x:Name="CU_K0203">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="sbg.png" Opacity="0.3"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="触摸开关"></Label>
                 </StackLayout>
-                <Label Text="触摸开关"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
-        <!--门窗磁-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A0501">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+            </RelativeLayout>
+          </StackLayout>
+          <!--门窗磁-->
+          <StackLayout Grid.Row="0" Grid.Column="2" x:Name="CU_A0501">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="sbg.png" Opacity="0.3"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="门窗磁"></Label>
                 </StackLayout>
-                <Label Text="门窗磁"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
+            </RelativeLayout>
+          </StackLayout>
+        </Grid>
       </StackLayout>
       <!--设备列表 2-->
-      <StackLayout  Orientation="Horizontal">
-        <!--红外感应器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A0541">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+      <StackLayout  HorizontalOptions="FillAndExpand">
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <!--红外感应器-->
+          <StackLayout Grid.Row="0" Grid.Column="0" x:Name="CU_A0541">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="sbg.png" Opacity="0.3"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="红外感应器"></Label>
                 </StackLayout>
-                <Label Text="红外感应器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
-        <!--调色控制器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_C0611">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+            </RelativeLayout>
+          </StackLayout>
+          <!--调色控制器-->
+          <StackLayout Grid.Row="0" Grid.Column="1" x:Name="CU_C0611">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="sbg.png" Opacity="0.3"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="调色控制器"></Label>
                 </StackLayout>
-                <Label Text="调色控制器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
-        <!--智能继电器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K0221">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+            </RelativeLayout>
+
+          </StackLayout>
+          <!--智能继电器-->
+          <StackLayout Grid.Row="0" Grid.Column="2" x:Name="CU_K0221">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="sbg.png" Opacity="0.3"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="智能继电器"></Label>
                 </StackLayout>
-                <Label Text="智能继电器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
+            </RelativeLayout>
+          </StackLayout>
+        </Grid>
       </StackLayout>
       <!--设备列表 3-->
-      <StackLayout  Orientation="Horizontal">
-        <!--红外感应器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A05413">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+      <StackLayout  HorizontalOptions="FillAndExpand">
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <!--红外感应器-->
+          <StackLayout Grid.Row="0" Grid.Column="0" x:Name="CU_A05413">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="un_sbg.png" Opacity="0.5"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Opacity="0.7">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="红外感应器"></Label>
                 </StackLayout>
-                <Label Text="红外感应器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
-        <!--调色控制器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_C06113">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+            </RelativeLayout>
+          </StackLayout>
+          <!--调色控制器-->
+          <StackLayout Grid.Row="0" Grid.Column="1" x:Name="CU_C06113">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="un_sbg.png" Opacity="0.5"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Opacity="0.7">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="调色控制器"></Label>
                 </StackLayout>
-                <Label Text="调色控制器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
-        <!--智能继电器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K02213">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+            </RelativeLayout>
+          </StackLayout>
+          <!--智能继电器-->
+          <StackLayout Grid.Row="0" Grid.Column="2" x:Name="CU_K02213">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="un_sbg.png" Opacity="0.5"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Opacity="0.7">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="智能继电器"></Label>
                 </StackLayout>
-                <Label Text="智能继电器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
+            </RelativeLayout>
+          </StackLayout>
+        </Grid>
       </StackLayout>
       <!--设备列表 4-->
-      <StackLayout  Orientation="Horizontal">
-        <!--红外感应器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A05412">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+      <StackLayout  HorizontalOptions="FillAndExpand">
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <!--红外感应器-->
+          <StackLayout Grid.Row="0" Grid.Column="0" x:Name="CU_A05412">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="un_sbg.png" Opacity="0.5"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Opacity="0.7">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="红外感应器"></Label>
                 </StackLayout>
-                <Label Text="红外感应器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
-        <!--调色控制器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_C06112">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+            </RelativeLayout>
+          </StackLayout>
+          <!--调色控制器-->
+          <StackLayout Grid.Row="0" Grid.Column="1" x:Name="CU_C06112">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="un_sbg.png" Opacity="0.5"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Opacity="0.7">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="调色控制器"></Label>
                 </StackLayout>
-                <Label Text="调色控制器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
-        <!--智能继电器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K02212">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+            </RelativeLayout>
+          </StackLayout>
+          <!--智能继电器-->
+          <StackLayout Grid.Row="0" Grid.Column="2" x:Name="CU_K02212">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="un_sbg.png" Opacity="0.5"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Opacity="0.7">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="智能继电器"></Label>
                 </StackLayout>
-                <Label Text="智能继电器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
+            </RelativeLayout>
+          </StackLayout>
+        </Grid>
       </StackLayout>
       <!--设备列表 5-->
-      <StackLayout  Orientation="Horizontal">
-        <!--红外感应器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_A05411">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+      <StackLayout  HorizontalOptions="FillAndExpand">
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <!--红外感应器-->
+          <StackLayout Grid.Row="0" Grid.Column="0" x:Name="CU_A05411">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="un_sbg.png" Opacity="0.5"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Opacity="0.7">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="红外感应器"></Label>
                 </StackLayout>
-                <Label Text="红外感应器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
-        <!--调色控制器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_C06111">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="un_sbg.png" Opacity="0.5"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105" Opacity="0.7">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+            </RelativeLayout>
+          </StackLayout>
+          <!--调色控制器-->
+          <StackLayout Grid.Row="0" Grid.Column="1" x:Name="CU_C06111">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="un_sbg.png" Opacity="0.5"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Opacity="0.7">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="glasses.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="调色控制器"></Label>
                 </StackLayout>
-                <Label Text="调色控制器"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
-        <!--智能继电器-->
-        <StackLayout WidthRequest="140" HeightRequest="105" x:Name="CU_K02211">
-          <RelativeLayout HorizontalOptions="FillAndExpand">
-            <Image Source="sbg.png" Opacity="0.3"  Aspect="AspectFit"/>
-            <StackLayout Orientation="Vertical" WidthRequest="140"  HeightRequest="105">
-              <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                  <Image Source="find.png" Opacity="0.7" WidthRequest="32" />
+            </RelativeLayout>
+          </StackLayout>
+          <!--智能继电器-->
+          <StackLayout Grid.Row="0" Grid.Column="2" x:Name="CU_K02211">
+            <RelativeLayout HorizontalOptions="FillAndExpand">
+              <Image Source="sbg.png" Opacity="0.3"  Aspect="Fill"/>
+              <StackLayout Orientation="Vertical" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                  <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Image Source="find.png" Opacity="0.7" WidthRequest="32" />
+                  </StackLayout>
+                  <Label Text="发现设备"></Label>
                 </StackLayout>
-                <Label Text="发现设备"></Label>
               </StackLayout>
-            </StackLayout>
-          </RelativeLayout>
-        </StackLayout>
+            </RelativeLayout>
+          </StackLayout>
+        </Grid>
       </StackLayout>
       <!---->
     </StackLayout>
